@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI CV Tailor</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; }
+    textarea, select, button { width: 100%; margin: 8px 0; }
+    textarea { height: 150px; }
+    button { padding: 12px; background: #3b82f6; color: white; border: none; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>AI CV Tailor</h1>
+  <textarea id="cv" placeholder="Paste your CV here..."></textarea>
+  <textarea id="jd" placeholder="Paste job description..."></textarea>
+  <select id="tone">
+    <option value="Professional">Professional</option>
+    <option value="Confident">Confident</option>
+    <option value="Friendly">Friendly</option>
+    <option value="Formal">Formal</option>
+  </select>
+  <button onclick="submitCV()">Tailor My CV</button>
+  <textarea id="output" readonly placeholder="Your tailored CV will appear here..."></textarea>
+
+  <script src="script.js"></script>
+</body>
+</html>
